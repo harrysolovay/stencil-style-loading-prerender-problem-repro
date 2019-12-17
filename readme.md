@@ -1,0 +1,1 @@
+In development, there's no flicker (delayed loading of the styles). When triggering a prerendered build, however, the style-loading is delayed (the prerenderer does not inline the CSS-in-JS-generated style). In this example, this manifests as the initial flicker of the unbounded svg taking on styles that constricts width to the parent's.
